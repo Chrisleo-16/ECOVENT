@@ -1,41 +1,60 @@
 "use client";
 
+import { useToast } from "@/hooks/use-toast";
 import Button from "../../../components/Button";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { useForm } from "react-hook-form";
 import React, { useState } from "react";
 
-const Contact: React.FC = () => {
- const [formData, setFormData] = useState({
-  email:'',
-  name:'',
-  message:'',
- });
+const formSchema = z.object({
+  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
+  email: z.string().email({ message: "Please enter a valid email address" }),
+  message: z
+    .string()
+    .min(10, { message: "Message must be at least 10 characters" }),
+});
 
- const [ status, setStatus] = useState('');
+type FormData = z.infer<typeof formSchema>;
 
- const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-  const {name, value} = e.target;
-  setFormData((prevData) => ({ ...prevData, [name]: value}));
- };
-const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  setStatus("Sending....");
-  
-  const response = await fetch("/api/contact", {
-    method: "POST",
-    headers: {
-      "Content-type": "application/json",
-},
-    body: JSON.stringify(formData),
-  });
-  
-  if (response.ok) {
-    console.log("Message sent successfully");
-  } else {
-    console.error("Error sending message");
-  }
-};
-  
-
+export default function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<FormData>({ resolver: zodResolver(formSchema) });
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
+        toast({
+          title: "Success!",
+          description: "Your message has been sent.",
+        });
+        reset();
+      } else {
+        throw new Error("Failed to send Message");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destrucctive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <section className=" w-screen py-22 flex flex-col items-center justify-center mb-12">
       <div className="text-center mt-24 mb-48">
@@ -56,7 +75,10 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           Fill out the form below and we'll get back to you as soon as possible.
         </p>
 
-        <form className="space-y-4 mt-10 pb-10" onSubmit={handleSubmit}>
+        <form
+          className="space-y-4 mt-10 pb-10"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <label
@@ -70,8 +92,14 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                 id="first-name"
                 type="text"
                 placeholder="Enter your First Name"
-                required
+                {...register("name")}
+                aria-invalid={errors.name ? "true" : "false"}
               />
+              {errors.name && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.name.message}
+                </p>
+              )}
             </div>
             <div className="space-y-2">
               <label
@@ -85,8 +113,14 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                 type="text"
                 id="last-name"
                 placeholder="Enter your Last Name"
-                required
+                {...register("name")}
+                aria-invalid={errors.name ? "true" : "false"}
               />
+              {errors.name && (
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.name.message}
+                </p>
+              )}
             </div>
           </div>
           <div className="space-y-2">
@@ -101,8 +135,14 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
               typeof="email"
               id="email"
               placeholder="Enter your Email Address"
-              required
+              {...register("email")}
+              aria-invalid={errors.email ? "true" : "false"}
             />
+            {errors.email && (
+              <p className="text-red-500 text-sm mt-1">
+                {errors.email.message}
+              </p>
+            )}
           </div>
           <div className="space-y-2 text-gray-500">
             <label htmlFor="messages ">Message Our Team</label>
@@ -111,19 +151,27 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
               rows={6}
               typeof="message"
               placeholder="Your Message for the Team"
+              {...register("message")}
+              aria-invalid={errors.message ? "true" : "false"}
             />
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">
+                {errors.message.message}
+              </p>
+            )}
           </div>
           <div className="space-y-2">
-            <Button
+            <button
+              className="border-yellow-500 text-green-500 px-4 py-3 border-2 rounded-full "
               type="submit"
               title="Submit"
-              variant="btn_dark_green_none"
-            />
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Sending..." : "Submit"}
+            </button>
           </div>
-          {status && <p className="mt-4 text-center">{status}</p>}
         </form>
       </div>
     </section>
   );
 }
-export default Contact;

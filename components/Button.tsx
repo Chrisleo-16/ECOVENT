@@ -21,6 +21,7 @@ const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
       <label className="bold-10 whitespace-nowrap cursor-pointer">
         {title}
       </label>{" "}
+      
     </button>
   );
 };

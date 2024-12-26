@@ -3,15 +3,14 @@
 import Button from "./Button";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
- 
+
 import Particles from "@/components/magicui/particles";
- 
-  
+import Link from "next/link";
 
 const Hero = () => {
   const { theme } = useTheme();
   const [color, setColor] = useState("#ffffff");
- 
+
   useEffect(() => {
     setColor(theme === "dark" ? "#ffffff" : "#000000");
   }, [theme]);
@@ -30,11 +29,13 @@ const Hero = () => {
         </p>
       </div>
       <div className=" flex flex-row-reverse mt-4 pl-[24px]  sm:flex-row items-center justify-center ">
-        <Button
-          type="button"
-          title="Learn More"
-          variant="btn_dark_green_outline "
-        />
+        <Link href="/blog">
+          <Button
+            type="button"
+            title="Learn More"
+            variant="btn_dark_green_outline "
+          />
+        </Link>
       </div>
       <Particles
         className="absolute inset-0"

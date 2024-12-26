@@ -3,7 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ClerkProvider } from "@clerk/nextjs";
 import Footer from "@/components/Footer";
-import ThemeProvider from "@/utilis/ThemeProvider";
+import ThemeProvider from "@/utils/ThemeProvider";
+import BackToTopButton from "@/components/BackToTopButton";
 
 
 export const metadata: Metadata = {
@@ -22,13 +23,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider frontendApi={process.env.NEXT_PUBLIC_CLERK_FRONTEND_API}>
+    <ClerkProvider
+     //frontendApi={process.env.NEXT_PUBLIC_CLERK_FRONTEND_API}
+     >
       <html lang="en" suppressHydrationWarning>
         <body className="scroll-smooth">
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Navbar />
 
             <main className="relative overflow-hidden ">{children}</main>
+            <BackToTopButton />
             <Footer />
           </ThemeProvider>
         </body>

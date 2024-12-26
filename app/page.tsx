@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import BackToTopButton from "@/components/BackToTopButton";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
@@ -13,6 +14,7 @@ export default function Home() {
       <Trusted />
       <About />
       <Testimonial />
+      <BackToTopButton/>
     </>
   );
 }

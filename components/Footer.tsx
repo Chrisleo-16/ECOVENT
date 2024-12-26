@@ -11,14 +11,14 @@ function Footer() {
     <footer className=" padding-container max-container py-12  px-24">
       <div className=" flex md:flex-row w-full flex-col justify-evenly mt-6">
         <div className="p-5">
-        <Link href="/">
-          <Image
-            src="/logo-no-background1.svg"
-            alt="logo"
-            width={250}
-            height={400}
-          />
-        </Link>
+          <Link href="/">
+            <Image
+              src="/logo-no-background1.svg"
+              alt="logo"
+              width={250}
+              height={400}
+            />
+          </Link>
         </div>
         <div className="p-5">
           <ul>
@@ -60,11 +60,6 @@ function Footer() {
                 Our Blog
               </a>
             </li>
-            <li className="pb-2  text-sm text-gray-50 font-medium hover:text-green-500 hover:duration-1000">
-              <a href="/" className="list-none">
-                Our Testimonials
-              </a>
-            </li>
           </ul>
         </div>
         <div className="p-5">
@@ -91,7 +86,7 @@ function Footer() {
           <ul>
             <p className="pb-4 text-yellow-500 text-2xl font-bold">Legal</p>
             <li className="pb-2  text-sm text-gray-50 font-medium hover:text-green-500 hover:duration-1000">
-              <a href="/" className="list-disc">
+              <a href="/privacy" className="list-disc">
                 Privacy & Terms
               </a>
             </li>
