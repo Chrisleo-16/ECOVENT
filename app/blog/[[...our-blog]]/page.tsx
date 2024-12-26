@@ -1,24 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { Post } from "@prisma/client"
-
-
 import Link from "next/link";
 
-export default function OurBlog() {
-  const [ posts, setPosts] = useState<Post[]>([])
-    useEffect(() => {
-      const eventSource = new EventSource('/api/posts')
-
-      eventSource.onmessage = (event) => {
-        const newPosts = JSON.parse(event.data)
-        setPosts(newPosts)
-      }
-      return () =>{
-        eventSource.close()
-      }
-    }, [])
-  
+export default function OurBlog() {  
   return (
     <div className="container mx-auto px-4 py-12 md:px-6 md:py-16 lg:py-20">
       <div className="mb-8 text-center">
