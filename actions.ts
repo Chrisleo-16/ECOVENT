@@ -4,6 +4,7 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
+
 export async function createPost(
   title: string,
   content: string,
@@ -13,7 +14,6 @@ export async function createPost(
     data: {
       title,
       content,
-      tags,
     },
   });
 }
