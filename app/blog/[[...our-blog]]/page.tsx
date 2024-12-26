@@ -6,7 +6,7 @@ import { Post } from "@prisma/client"
 import Link from "next/link";
 
 export default function OurBlog() {
-  const [ posts, setPosts] = new useState<Post[]>([])
+  const [ posts, setPosts] = useState<Post[]>([])
     useEffect(() => {
       const eventSource = new EventSource('/api/posts')
 
