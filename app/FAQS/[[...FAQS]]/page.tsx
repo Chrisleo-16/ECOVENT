@@ -14,6 +14,34 @@ const faqs: FAQ[] = [
     question: " What is this ECOVENT in full",
     answer: `Great question ${""} Its simply EcoVanguard Ventures `,
   },
+  {
+    question:"What is EcoVentures all about",
+    answer:"EcoVanguard Ventures, will spearhead transformative solutions that address the immediate challenges and lay the groundwork for long-term economic resilience, in innovative ways"
+  },
+  {
+    question:"How does it answer the mordern challenge",
+    answer:"Urbanization is an unstoppable phenomenon in which huge masses of people flock into cities in search of better opportunities. Consequently, this migration often leads to overcrowded cities, strained resources, and environmental degradation. EcoVanguard Ventures aims to revolutionize urban development by integrating green technologies and sustainable planning from the ground up EcoVanguard also advocates the use of smart city technologies that optimize resource management, from water conservation systems to efficient waste management.",
+   },
+  {
+    question:"What good does it do with Agriculture",
+    answer:"Agriculture is the backbone of any economy. In retrospective, some traditional practices often lead to soil degradation, water scarcity, and biodiversity loss. The idea is committed to reversing these trends by promoting sustainable agriculture techniques that increase productivity without compromising the environment. {""} By partnering with local farmers, it will ensure that knowledge transfer and capacity building are at the core of its strategy, empowering communities to become self-sufficient and resilient. ",
+  },
+  {
+    question:"Whats the innovative driving force behind Ecoventures",
+    answer:"The idea is about constantly exploring new technologies and methodologies that can enhance sustainability and resilience. From developing drought-resistant crops to designing self-sustaining urban habitats, it is truly at the forefront of the green revolution.",
+  },
+  {
+    question:"What Vision does EcoVent have for the future",
+    answer:"EcoVanguard Ventures is more than just an ideal concept; it’s a movement towards a sustainable and resilient future. By addressing the challenges of urbanization and agriculture with innovative and sustainable solutions, paving the way for economies that are robust, adaptable and capable of withstanding the test of time will be much more realistic than just an idea behind it. ",
+  },
+  {
+    question:"So how does this work anyway",
+    answer:"The EcoVangard team would support the adoption of precision farming, which leverages data analytics and IoT devices to optimize crop yields and minimize waste. It will encourage the use of organic farming methods that enrich the soil and protect ecosystems.EcoVanguard also advocates the use of smart city technologies that optimize resource management, from water conservation systems to efficient waste management.",
+  },
+  {
+    question:"What's the tagline or rather the movement behind EcoVanguard Ventures",
+    answer:"“Pioneering Sustainability, Cultivating Resilience.” It’s a vision that absolutely promises a brighter future for our planet and ensures future generations will inherit a world where economic prosperity goes hand in hand with environmental stewardship.",
+  },
 ];
 export default function FAQs() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
