@@ -24,7 +24,7 @@ const faqs: FAQ[] = [
    },
   {
     question:"What good does it do with Agriculture",
-    answer:"Agriculture is the backbone of any economy. In retrospective, some traditional practices often lead to soil degradation, water scarcity, and biodiversity loss. The idea is committed to reversing these trends by promoting sustainable agriculture techniques that increase productivity without compromising the environment. {""} By partnering with local farmers, it will ensure that knowledge transfer and capacity building are at the core of its strategy, empowering communities to become self-sufficient and resilient. ",
+    answer:"Agriculture is the backbone of any economy. In retrospective, some traditional practices often lead to soil degradation, water scarcity, and biodiversity loss. The idea is committed to reversing these trends by promoting sustainable agriculture techniques that increase productivity without compromising the environment.By partnering with local farmers, it will ensure that knowledge transfer and capacity building are at the core of its strategy, empowering communities to become self-sufficient and resilient. ",
   },
   {
     question:"Whats the innovative driving force behind Ecoventures",
