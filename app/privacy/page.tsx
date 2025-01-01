@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
   return (
     <div className="space-y-6">
       <div className="py-4 px-4 justify-items-center text-center">
-        <h1 className="text-6xl font-bold mb-6 z-20 uppercase ">
+        <h1 className="text-4xl font-bold mb-6 z-20 uppercase ">
           {" "}
           Legal Information
         </h1>
