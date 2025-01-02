@@ -45,7 +45,7 @@ export default function OurTeam() {
       </div>
       <div className=" rounded-lg shadow-lg overflow-hidden ">
         <div className="relative h-48 md:h-56 lg:h-64">
-          <img src="IMG_20230826_153815276.jpg" alt="Team Member" className="object-cover" />
+          <img src="IMG_20230826_153815276.jpg" alt="Team Member" className="w-auto h-auto max-w-full max-h-full" />
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold">Leo Chrisben</h3>
