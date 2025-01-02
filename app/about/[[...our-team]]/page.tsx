@@ -27,7 +27,8 @@ export default function OurTeam() {
 
       <div className=" rounded-lg shadow-lg overflow-hidden ">
         <div className="relative h-48 md:h-56 lg:h-64">
-          <img src="IMG_20250102_173224_487.jpg" alt="Team Member" className="w-[100%] h-full" />
+          <img src="IMG_20250102_173224_487.jpg" alt="Team Member" className="w-full
+            h-full" />
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold capitalize">eugine obwaya</h3>
