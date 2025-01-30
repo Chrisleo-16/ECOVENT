@@ -90,6 +90,7 @@ export default function Contact() {
               type="submit"
               title="Submit"
             >
+              Submit 
             </button>
           </div>
         </form>
