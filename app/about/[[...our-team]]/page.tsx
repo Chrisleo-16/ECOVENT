@@ -7,28 +7,10 @@ import { IoLogoFacebook } from "react-icons/io";
 
 export default function OurTeam() {
   return (
-    <section className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-6 mb-12">
+    <section className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-6 mb-12"
       <div className=" rounded-lg shadow-lg overflow-hidden ">
         <div className="relative h-48 md:h-56 lg:h-64">
-          <img src="" alt="Team Member" className="object-cover" />
-        </div>
-        <div className="p-6">
-          <h3 className="text-xl font-semibold">Martin Mwanthi</h3>
-          <p className="text-muted-foreground uppercase">C.e.o ecovent</p>
-          <p className="mt-4 text-sm text-muted-foreground">
-            The great leadership of Sir Martin has made an inspiration to the
-            wellbeing of <span className="uppercase">Ecovent</span>
-          </p>
-        </div>
-        <div className="flex px-6 mb-4 gap-4 group:bg-green-50 items-center group-hover:bg-teal-700 ">
-          <BsFacebook /> <BsTwitterX /> <BsInstagram /> <BsPhoneVibrate />
-        </div>
-      </div>
-
-      <div className=" rounded-lg shadow-lg overflow-hidden ">
-        <div className="relative h-48 md:h-56 lg:h-64">
-          <img src="IMG_20250102_173224_487.jpg" alt="Team Member" className="mt-4 object-contain w-full
-            h-48" />
+          <img src="IMG_20250102_173224_487.jpg" alt="Team Member" className="mt-4 object-contain w-full rounded-xl h-48" />
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold capitalize">eugine obwaya</h3>
@@ -36,17 +18,15 @@ export default function OurTeam() {
             Chief Information officer
           </p>
           <p className="mt-4 text-sm text-muted-foreground">
-            The great leadership of Sir Martin has made an inspiration to the
-            wellbeing of <span className="uppercase">Ecovent</span>
+           Our outstanding Chief Information Officer has masterfully aligned technology with our business vision, driving innovation, and setting the stage for a  remarkable growth—truly a game-changer for our organization!
           </p>
         </div>
         <div className="flex px-6 mb-4 gap-4 group:bg-green-50 items-center group-hover:bg-teal-700 ">
           <BsFacebook /> <BsTwitterX /> <BsInstagram /> <BsPhoneVibrate />
         </div>
-      </div>
       <div className=" rounded-lg shadow-lg overflow-hidden ">
-        <div className="relative h-48 md:h-56 lg:h-64">
-          <img src="IMG_20230826_153815276.jpg" alt="Team Member" className="w-auto h-auto max-w-full max-h-full" />
+        <div className="relative h-48 md:h-56 lg:h-64
+          <img src="IMG_20230826_153815276.jpg" alt="Team Member" className="mt-4 object-contain w-full h-28 rounded-xl" />
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold">Leo Chrisben</h3>
@@ -65,7 +45,7 @@ export default function OurTeam() {
       </div>
       <div className=" rounded-lg shadow-lg overflow-hidden ">
         <div className="relative h-48 md:h-56 lg:h-64">
-          <img src="IMG-20250325-WA0000.jpg" alt="Team Member" className="mt-4 object-contain w-full h-48" />
+          <img src="IMG-20250325-WA0000.jpg" alt="Team Member" className="mt-4 object-contain w-full h-48 rounded-xl" />
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold">Ken Waweru</h3>
@@ -73,8 +53,7 @@ export default function OurTeam() {
             Director <br /> chairman ecovent
           </p>
           <p className="mt-4 text-sm text-muted-foreground">
-            The great leadership of Sir Martin has made an inspiration to the
-            wellbeing of <span className="uppercase">Ecovent</span>
+            "I’m incredibly proud of our team’s dedication and innovation, which continue to drive our company’s success and set us apart in the industry!"
           </p>
         </div>
         <div className="flex px-6 mb-4 gap-4 group:bg-green-50 items-center group-hover:bg-teal-700 ">
@@ -91,8 +70,7 @@ export default function OurTeam() {
             market & welfare analyst
           </p>
           <p className="mt-4 text-sm text-muted-foreground">
-            The great leadership of Sir Martin has made an inspiration to the
-            wellbeing of <span className="uppercase">Ecovent</span>
+            As a Market and Welfare Analyst, I am thrilled to highlight our team's exceptional ability to uncover valuable insights that drive strategic market analysis and enhance our competitive edge!
           </p>
         </div>
         <div className="flex px-6 mb-4 gap-4 group:bg-green-50 items-center group-hover:bg-teal-700 ">
@@ -107,8 +85,7 @@ export default function OurTeam() {
           <h3 className="text-xl font-semibold">Alex Nyamweno</h3>
           <p className="text-muted-foreground uppercase">patron ecovent</p>
           <p className="mt-4 text-sm text-muted-foreground">
-            The great leadership of Sir Martin has made an inspiration to the
-            wellbeing of <span className="uppercase">Ecovent</span>
+            As a proud patron of this company, I am thrilled to witness the tremendous strides our team has made together, driving innovation and success in every market analysis we undertake!
           </p>
         </div>
         <div className="flex px-6 mb-4 gap-4 group:bg-green-50 items-center group-hover:bg-teal-700 ">
