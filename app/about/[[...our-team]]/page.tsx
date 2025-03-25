@@ -17,16 +17,15 @@ export default function OurTeam() {
           <p className="text-muted-foreground uppercase">
             Chief Information officer
           </p>
-          <p className="mt-4 text-sm text-muted-foreground">
-           Our outstanding Chief Information Officer has masterfully aligned technology with our business vision, driving innovation, and setting the stage for a  remarkable growth—truly a game-changer for our organization!
+          <p className="mt-4 text-sm text-muted-foreground">Our outstanding Chief Information Officer has masterfully aligned technology with our business vision, driving innovation, and setting the stage for a  remarkable growth—truly a game-changer for our organization!
           </p>
          </div>
         <div className="flex px-6 mb-4 gap-4 group:bg-green-50 items-center group-hover:bg-teal-700 ">
           <BsFacebook /> <BsTwitterX /> <BsInstagram /> <BsPhoneVibrate />
         </div>
- </div>
+     </div>
       <div className=" rounded-lg shadow-lg overflow-hidden ">
-        <div className="relative h-48 md:h-56 lg:h-64
+        <div className="relative h-48 md:h-56 lg:h-64"
           <img src="IMG_20230826_153815276.jpg" alt="Team Member" className="mt-4 object-contain w-full h-28 rounded-xl" />
         </div>
         <div className="p-6">
@@ -44,7 +43,7 @@ export default function OurTeam() {
           <BsFacebook /> <BsTwitterX /> <BsInstagram /> <BsPhoneVibrate />
         </div>
       </div>
-      <div className=" rounded-lg shadow-lg overflow-hidden ">
+      <div className="rounded-lg shadow-lg overflow-hidden">
         <div className="relative h-48 md:h-56 lg:h-64">
           <img src="IMG-20250325-WA0000.jpg" alt="Team Member" className="mt-4 object-contain w-full h-48 rounded-xl" />
         </div>
@@ -54,7 +53,7 @@ export default function OurTeam() {
             Director <br /> chairman ecovent
           </p>
           <p className="mt-4 text-sm text-muted-foreground">
-            "I’m incredibly proud of our team’s dedication and innovation, which continue to drive our company’s success and set us apart in the industry!"
+            I’m incredibly proud of our team’s dedication and innovation, which continues to drive our company’s success and set us apart from the industry!
           </p>
         </div>
         <div className="flex px-6 mb-4 gap-4 group:bg-green-50 items-center group-hover:bg-teal-700 ">
@@ -70,9 +69,7 @@ export default function OurTeam() {
           <p className="text-muted-foreground uppercase">
             market & welfare analyst
           </p>
-          <p className="mt-4 text-sm text-muted-foreground">
-            As a Market and Welfare Analyst, I am thrilled to highlight our team's exceptional ability to uncover valuable insights that drive strategic market analysis and enhance our competitive edge!
-          </p>
+          <p className="mt-4 text-sm text-muted-foreground">As a Market and Welfare Analyst, I am thrilled to highlight our team exceptional ability to uncover valuable insights that drive strategic market analysis and enhance our competitive edge!</p>
         </div>
         <div className="flex px-6 mb-4 gap-4 group:bg-green-50 items-center group-hover:bg-teal-700 ">
           <BsFacebook /> <BsTwitterX /> <BsInstagram /> <BsPhoneVibrate />
