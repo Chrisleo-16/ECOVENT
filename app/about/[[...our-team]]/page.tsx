@@ -8,7 +8,7 @@ import { IoLogoFacebook } from "react-icons/io";
 export default function OurTeam() {
   return (
     <section className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-6 mb-12"
-      <div className=" rounded-lg shadow-lg overflow-hidden ">
+    <div className=" rounded-lg shadow-lg overflow-hidden ">
         <div className="relative h-48 md:h-56 lg:h-64">
           <img src="IMG_20250102_173224_487.jpg" alt="Team Member" className="mt-4 object-contain w-full rounded-xl h-48" />
         </div>
@@ -20,10 +20,11 @@ export default function OurTeam() {
           <p className="mt-4 text-sm text-muted-foreground">
            Our outstanding Chief Information Officer has masterfully aligned technology with our business vision, driving innovation, and setting the stage for a  remarkable growth—truly a game-changer for our organization!
           </p>
-        </div>
+         </div>
         <div className="flex px-6 mb-4 gap-4 group:bg-green-50 items-center group-hover:bg-teal-700 ">
           <BsFacebook /> <BsTwitterX /> <BsInstagram /> <BsPhoneVibrate />
         </div>
+ </div>
       <div className=" rounded-lg shadow-lg overflow-hidden ">
         <div className="relative h-48 md:h-56 lg:h-64
           <img src="IMG_20230826_153815276.jpg" alt="Team Member" className="mt-4 object-contain w-full h-28 rounded-xl" />
@@ -85,7 +86,7 @@ export default function OurTeam() {
           <h3 className="text-xl font-semibold">Alex Nyamweno</h3>
           <p className="text-muted-foreground uppercase">patron ecovent</p>
           <p className="mt-4 text-sm text-muted-foreground">
-            As a proud patron of this company, I am thrilled to witness the tremendous strides our team has made together, driving innovation and success in every market analysis we undertake!
+As a proud patron of the company, I am thrilled to witness the tremendous strides our team has made together, driving innovation and success of every market analysis we undertook!
           </p>
         </div>
         <div className="flex px-6 mb-4 gap-4 group:bg-green-50 items-center group-hover:bg-teal-700 ">
