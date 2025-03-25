@@ -65,7 +65,7 @@ export default function OurTeam() {
       </div>
       <div className=" rounded-lg shadow-lg overflow-hidden ">
         <div className="relative h-48 md:h-56 lg:h-64">
-          <img src="" alt="Team Member" className="object-cover" />
+          <img src="IMG-20250325-WA0000.jpg" alt="Team Member" className="project_img" />
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold">Ken Waweru</h3>
