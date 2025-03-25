@@ -7,7 +7,7 @@ import { IoLogoFacebook } from "react-icons/io";
 
 export default function OurTeam() {
   return (
-    <section className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-6 mb-12"
+    <section className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-6 mb-12">
     <div className=" rounded-lg shadow-lg overflow-hidden ">
         <div className="relative h-48 md:h-56 lg:h-64">
           <img src="IMG_20250102_173224_487.jpg" alt="Team Member" className="mt-4 object-contain w-full rounded-xl h-48" />
