@@ -10,7 +10,7 @@ export default function OurTeam() {
     <section className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-6 mb-12">
       <div className=" rounded-lg shadow-lg overflow-hidden ">
         <div className="relative h-48 md:h-56 lg:h-64">
-          <img src="IMG_20250102_173224.487.jpg" alt="Team Member" className="object-contain w-full h-48 mt-4 rounded-xl" />
+          <img src="IMG_20250102_173224_487.jpg" alt="Team Member" className="object-contain w-full h-48 mt-4 rounded-xl" />
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold capitalize">eugine obwaya</h3>
