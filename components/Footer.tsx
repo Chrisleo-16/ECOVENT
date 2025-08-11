@@ -96,7 +96,7 @@ function Footer() {
       <hr className="py-6 px-12" />
       <div className="items-center justify-center text-center pb-12">
         {" "}
-        &copy;2024|ECOVENT
+        &copy;{new Date().getFullYear()}|ECOVENT
       </div>
     </footer>
   );
