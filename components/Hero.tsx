@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section className="max-container padding-container  gap-20 py-10 pb-32 md:gap-28 lg:py-20  mb-24">
       <div className="z-20 flex flex-col">
-        <div className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+        <div className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b  to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
           <h3 className="text-3xl mt-48  bold-52 lg:bold-88 capitalize tracking-tight text-center sm:text-5xl text-gray-700">
             Innovate and trailblaze as a sustainable leader
           </h3>
